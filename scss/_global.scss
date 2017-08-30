@@ -11,6 +11,7 @@ p {
 p.small {
   font-size: 16px;
 }
+
 a,
 a.active,
 a:active,
@@ -40,6 +41,7 @@ hr.star-primary {
   border: none;
   border-top: solid 5px;
 }
+
 hr.star-light:after,
 hr.star-primary:after {
   font-family: FontAwesome;
@@ -54,6 +56,7 @@ hr.star-primary:after {
 hr.star-light {
   border-color: white;
 }
+
 hr.star-light:after {
   color: white;
   background-color: $theme-success;
@@ -62,6 +65,7 @@ hr.star-light:after {
 hr.star-primary {
   border-color: $theme-primary;
 }
+
 hr.star-primary:after {
   color: $theme-primary;
   background-color: white;
@@ -83,7 +87,8 @@ section.success {
   color: white;
   background: $theme-success;
 }
-@media(max-width:767px) {
+
+@media(max-width: 767px) {
   section {
     padding: 75px 0;
   }
