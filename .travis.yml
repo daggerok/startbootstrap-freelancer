@@ -11,6 +11,11 @@ script:
   - yarn -i
   - yarn predeploy
   - yarn postdeploy
+  - yarn global add npm-check-updates
+  - ncu
+  - ncu -u
+  - yarn -i
+  - yarn upgrade
 cache:
   directories:
     - node_modules
