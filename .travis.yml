@@ -9,6 +9,8 @@ install: true
 before_script: npm i -g yarn
 script:
   - yarn -i
+  - yarn predeploy
+  - yarn postdeploy
 cache:
   directories:
     - node_modules
