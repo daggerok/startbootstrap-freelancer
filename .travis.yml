@@ -1,11 +1,14 @@
-sudo:          false
-language:      node_js
+dist: precise
+language: node_js
 node_js:
   - "node"
-install:       npm install
+  - 6
+  - 7
+  - 8
+install: true
+before_script: npm i -g yarn
 script:
-  - npm test
-  - gulp
+  - yarn -i
 cache:
   directories:
     - node_modules
